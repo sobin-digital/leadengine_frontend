@@ -45,6 +45,23 @@
   color: var(--primary);
 }
 
+.vendor-btn {
+  background: var(--primary-light);
+  color: white !important;
+  padding: 0.4rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.vendor-btn:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 .dropdown-container {
   position: relative;
 }

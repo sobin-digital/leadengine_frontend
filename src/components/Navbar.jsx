@@ -61,6 +61,7 @@ const Navbar = () => {
           </div>
           
           <Link to="/contact" className="nav-link" onClick={closeMenus}>Contact</Link>
+          <Link to="/provider/login" className="nav-link vendor-btn" onClick={closeMenus}>Vendor Portal</Link>
         </div>
         
         <div className="hamburger" onClick={toggleMobileMenu}>
