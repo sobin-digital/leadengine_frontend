@@ -73,6 +73,20 @@ function Home() {
               <p>Professional cleaning for your home and office.</p>
             </div>
           </Link>
+          <Link to="/electrician-dubai" style={{textDecoration: 'none', color: 'inherit'}}>
+            <div className="service-card">
+              <div className="service-icon">🔌</div>
+              <h3>Electrician</h3>
+              <p>Professional electrical fixes and wiring.</p>
+            </div>
+          </Link>
+          <Link to="/appliance-repair-dubai" style={{textDecoration: 'none', color: 'inherit'}}>
+            <div className="service-card">
+              <div className="service-icon">📺</div>
+              <h3>Appliance Repair</h3>
+              <p>Expert repairs for home appliances.</p>
+            </div>
+          </Link>
           <a href="#services" style={{textDecoration: 'none', color: 'inherit'}}>
             <div className="service-card">
               <div className="service-icon">🚗</div>

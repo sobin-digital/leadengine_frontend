@@ -91,5 +91,69 @@ export const servicesConfig = {
       { q: 'Is your staff insured?', a: 'All our maids are legally sponsored, insured, and professionally trained.' }
     ],
     whatsappText: 'Hi, I need cleaning services in Dubai'
+  },
+  'electrician-dubai': {
+    slug: 'electrician-dubai',
+    title: 'Professional Electrician Services in Dubai',
+    description: 'Fast and reliable electrical repair and installation services across Dubai.',
+    heroHeadline: 'Professional',
+    heroHighlight: 'Electrician Services in Dubai',
+    heroSubheadline: 'Fast and reliable electrical repair and installation services across Dubai.',
+    serviceOptions: [
+      'electrician',
+      'Emergency Electrical Fix',
+      'Wiring Installation',
+      'Lighting & Fixtures',
+      'Short Circuit Repair'
+    ],
+    features: [
+      { icon: '⚡', title: 'Licensed Experts', desc: 'Certified and safety-compliant electricians.' },
+      { icon: '⏱️', title: 'Fast Arrival', desc: 'Emergency response for power outages.' },
+      { icon: '💡', title: 'Quality Parts', desc: 'We supply high-grade wires and fixtures.' }
+    ],
+    servicesList: [
+      { title: 'Emergency Fixes', desc: '24/7 support for tripped breakers and total power loss.' },
+      { title: 'Wiring & Sockets', desc: 'New plug points, switches, and full room rewiring.' },
+      { title: 'Lighting Setup', desc: 'Chandelier installation and outdoor lighting setup.' },
+      { title: 'Short Circuits', desc: 'Advanced diagnostics to find hidden electrical faults.' }
+    ],
+    faqs: [
+      { q: 'Are your electricians certified?', a: 'Yes, all technicians carry local certifications.' },
+      { q: 'Do you operate during power outages?', a: 'We offer priority dispatch for total power failures.' },
+      { q: 'Can you install smart home switches?', a: 'Absolutely, we integrate all types of smart lighting.' }
+    ],
+    whatsappText: 'Hi, I need an electrician service in Dubai'
+  },
+  'appliance-repair-dubai': {
+    slug: 'appliance-repair-dubai',
+    title: 'Home Appliance Repair Services in Dubai',
+    description: 'Expert repair for washing machines, refrigerators, ovens, and more.',
+    heroHeadline: 'Expert Home',
+    heroHighlight: 'Appliance Repair in Dubai',
+    heroSubheadline: 'Quick, guaranteed repairs for your essential household appliances.',
+    serviceOptions: [
+      'appliance-repair',
+      'Washing Machine Repair',
+      'Refrigerator Repair',
+      'Oven / Stove Repair',
+      'Dishwasher Repair'
+    ],
+    features: [
+      { icon: '🔧', title: 'All Brands', desc: 'Samsung, LG, Bosch, Siemens and more.' },
+      { icon: '🛡️', title: 'Warranty Included', desc: '30-day guarantee on all replacement parts.' },
+      { icon: '🏠', title: 'At-Home Service', desc: 'We fix it right in your kitchen or laundry room.' }
+    ],
+    servicesList: [
+      { title: 'Washing Machines', desc: 'Fixing leaks, spin issues, and electronic board failures.' },
+      { title: 'Refrigerators', desc: 'Compressor replacements and gas refills to restore cooling.' },
+      { title: 'Cooking Ranges', desc: 'Oven heating element repair and stove gas line checks.' },
+      { title: 'Dishwashers', desc: 'Unblocking drainage and fixing spray arm mechanisms.' }
+    ],
+    faqs: [
+      { q: 'Do I need to bring my appliance to your shop?', a: 'No, our technicians carry tools to fix 95% of issues on-site.' },
+      { q: 'Are spare parts original?', a: 'We use OEM parts sourced directly from manufacturers.' },
+      { q: 'What if the appliance is unrepairable?', a: 'Our diagnostic fee is minimal, and we will advise you honestly.' }
+    ],
+    whatsappText: 'Hi, I need appliance repair service in Dubai'
   }
 };
