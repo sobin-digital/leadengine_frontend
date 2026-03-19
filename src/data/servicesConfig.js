@@ -155,5 +155,36 @@ export const servicesConfig = {
       { q: 'What if the appliance is unrepairable?', a: 'Our diagnostic fee is minimal, and we will advise you honestly.' }
     ],
     whatsappText: 'Hi, I need appliance repair service in Dubai'
+  },
+  'car-recovery-dubai': {
+    slug: 'car-recovery-dubai',
+    title: '24/7 Car Recovery Service in Dubai | LeadEngine UAE',
+    description: 'Fast and reliable car towing and recovery services anywhere in Dubai.',
+    heroHeadline: '24/7 Emergency',
+    heroHighlight: 'Car Recovery in Dubai',
+    heroSubheadline: 'Stuck on the road? We dispatch flatbeds and towing experts instantly.',
+    serviceOptions: [
+      'Flatbed Towing',
+      'Battery Jumpstart',
+      'Flat Tire Change',
+      'Off-road Pull Out'
+    ],
+    features: [
+      { icon: '🚗', title: 'Any Vehicle', desc: 'Secure transport for sedans, SUVs, and luxury supercars.' },
+      { icon: '⏱️', title: '30 Min Arrival', desc: 'Rapid dispatch network covering all Dubai highways.' },
+      { icon: '🛡️', title: 'Insured Transport', desc: 'Full liability coverage while your vehicle is in transit.' }
+    ],
+    servicesList: [
+      { title: 'Towing Services', desc: 'Safe flatbed towing to your preferred garage or home.' },
+      { title: 'Jumpstarts', desc: 'Dead battery? We can boost your car anywhere.' },
+      { title: 'Tire Services', desc: 'On-site spare tire fitting and puncture repairs.' },
+      { title: 'Off-road Recovery', desc: 'Desert pull-outs for trapped 4x4s utilizing specialized winches.' }
+    ],
+    faqs: [
+      { q: 'How fast can a tow truck reach me?', a: 'Typically within 30 minutes, traffic permitting.' },
+      { q: 'Do you tow luxury cars?', a: 'Yes, we use hydraulic flatbeds perfect for low-clearance sports cars.' },
+      { q: 'Are you available late at night?', a: 'Our dispatch operates 24/7, 365 days a year.' }
+    ],
+    whatsappText: 'Hi, I need emergency car recovery in Dubai'
   }
 };

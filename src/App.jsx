@@ -5,6 +5,7 @@ import ServiceLanding from './pages/ServiceLanding';
 import ThankYou from './pages/ThankYou';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
+import Navbar from './components/Navbar';
 import './index.css';
 
 function Home() {
@@ -87,13 +88,13 @@ function Home() {
               <p>Expert repairs for home appliances.</p>
             </div>
           </Link>
-          <a href="#services" style={{textDecoration: 'none', color: 'inherit'}}>
+          <Link to="/car-recovery-dubai" style={{textDecoration: 'none', color: 'inherit'}}>
             <div className="service-card">
               <div className="service-icon">🚗</div>
               <h3>Car Recovery</h3>
               <p>24/7 Car breakdown and recovery assistance.</p>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
@@ -103,16 +104,7 @@ function Home() {
 function App() {
   return (
     <div className="app-container">
-      <nav className="navbar">
-        <div className="logo">LeadEngine UAE</div>
-        <div className="nav-links">
-          <a href="/">Home</a>
-          <a href="/ac-repair-dubai">AC Repair</a>
-          <a href="/plumber-dubai">Plumbing</a>
-          <a href="/cleaning-dubai">Cleaning</a>
-          <a href="/contact">Contact</a>
-        </div>
-      </nav>
+      <Navbar />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
