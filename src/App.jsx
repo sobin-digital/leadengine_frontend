@@ -5,6 +5,9 @@ import ServiceLanding from './pages/ServiceLanding';
 import ThankYou from './pages/ThankYou';
 import AdminLogin from './pages/AdminLogin';
 import AdminDashboard from './pages/AdminDashboard';
+import ProviderRegister from './pages/ProviderRegister';
+import ProviderLogin from './pages/ProviderLogin';
+import ProviderDashboard from './pages/ProviderDashboard';
 import Navbar from './components/Navbar';
 import './index.css';
 
@@ -111,6 +114,12 @@ function App() {
           <Route path="/thank-you" element={<ThankYou />} />
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          
+          {/* Provider Panel Routes */}
+          <Route path="/provider/register" element={<ProviderRegister />} />
+          <Route path="/provider/login" element={<ProviderLogin />} />
+          <Route path="/provider/dashboard" element={<ProviderDashboard />} />
+          
           <Route path="/:serviceId" element={<ServiceLanding />} />
         </Routes>
       </main>

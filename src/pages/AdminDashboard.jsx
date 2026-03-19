@@ -19,7 +19,38 @@ const AdminDashboard = () => {
       return;
     }
     fetchLeads();
+    fetchProviders();
   }, [navigate]);
+
+  const [providers, setProviders] = useState([]);
+
+  const fetchProviders = async () => {
+    try {
+      const res = await fetch(`https://leadengine-backend.onrender.com/api/providers`);
+      const data = await res.json();
+      if (data.success) {
+        setProviders(data.data);
+      }
+    } catch (e) {
+      console.error('Failed to fetch providers', e);
+    }
+  };
+
+  const handleAssignLead = async (leadId, providerId) => {
+    try {
+      const res = await fetch(`https://leadengine-backend.onrender.com/api/leads/${leadId}/assign`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ providerId: providerId || null })
+      });
+      const data = await res.json();
+      if (data.success) {
+        setLeads(prev => prev.map(l => l._id === leadId ? data.data : l));
+      }
+    } catch(e) {
+      console.error(e);
+    }
+  };
 
   const fetchLeads = async () => {
     setLoading(true);
@@ -135,6 +166,7 @@ const AdminDashboard = () => {
                     <th>Service</th>
                     <th>Phone</th>
                     <th>Location</th>
+                    <th>Assigned Provider</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -147,6 +179,18 @@ const AdminDashboard = () => {
                         <a href={`tel:${lead.phone}`} className="phone-link">{lead.phone}</a>
                       </td>
                       <td>{lead.location}</td>
+                      <td>
+                        <select 
+                          value={lead.assignedTo ? (lead.assignedTo._id || lead.assignedTo) : ''} 
+                          onChange={(e) => handleAssignLead(lead._id, e.target.value)}
+                          style={{ padding: '0.4rem', borderRadius: '4px', border: '1px solid #ddd', background: lead.assignedTo ? '#e6f0ff' : 'white', cursor: 'pointer', maxWidth: '160px' }}
+                        >
+                          <option value="">Unassigned</option>
+                          {providers.map(p => (
+                            <option key={p._id} value={p._id}>{p.name} ({p.services.length} svcs)</option>
+                          ))}
+                        </select>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
